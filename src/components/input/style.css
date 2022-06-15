@@ -1,0 +1,25 @@
+/* Start input */
+.title__input__gr {
+  display: flex;
+  border-bottom: 3px solid black;
+  padding: 20px 0;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  align-items: center;
+  color: #0e99f5;
+}
+
+.input {
+  margin: 10px 0 10px 10px;
+  height: 45px;
+  width: 390px;
+  border-radius: 10px;
+  border: 2px solid #0e99f5;
+  padding: 0 0 0 10px;
+}
+.input:hover
+ {
+  cursor: pointer;
+}
+
+/* End Input */

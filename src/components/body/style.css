@@ -1,0 +1,12 @@
+
+/* Start List-Todo */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  margin: 0 10px;
+}
+
+/* End Desciption */
+

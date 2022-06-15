@@ -1,0 +1,43 @@
+/* Start footer */
+.footer {
+  margin: 40px 0 0 0;
+  border-top: 3px solid black;
+  /* font-size: 25px; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .btn-pre,
+.footer .btn-next {
+  font-size: 40px;
+}
+.footer .btn-pre:hover,
+.footer .btn-1:hover,
+.footer .btn-2:hover,
+.footer .btn-3:hover,
+.footer .btn-next:hover {
+  color: #0e99f5;
+
+}
+.footer .btn-1 {
+  color: red;
+}
+.footer .btn-pre,
+.footer .btn-next,
+.footer .btn-1,
+.footer .btn-2,
+.footer .btn-3
+ {
+  padding: 0 15px;
+}
+
+.number {
+  font-size: 25px;
+  padding-top: 10px;
+}
+/* End Footer */

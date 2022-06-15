@@ -1,0 +1,24 @@
+.input__btn-circle-plus {
+  font-size: 40px;
+  color: #0e99f5;
+  border-radius: 50%;
+  /* padding: unset; */
+  padding: 0 10px;
+  background-color: #fff;
+  border: 2px solid #0e99f5;
+}
+.input__btn-circle-plus:hover, .btn:hover {
+cursor: pointer;
+}
+.btn {
+  margin-left: 10px;
+  border: none;
+  background-color: #fff;
+}
+.btn-completed {
+ 
+  color: #0e99f5;
+}
+.btn-remove {
+  color: red;
+}
