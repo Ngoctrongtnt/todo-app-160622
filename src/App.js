@@ -14,7 +14,7 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      listTasks: JSON.parse(localStorage.getItem('listTask')) || [],
+      listTasks: JSON.parse(localStorage.getItem('listTasks')) || [],
       txtInput: '',
     }
     this.handleChangeInput = this.handleChangeInput.bind(this);
@@ -43,7 +43,7 @@ export default class App extends Component {
 
     this.setState(prevState => {
       // const jsonTask = JSON.stringify(newTask)
-      localStorage.setItem('listTask', JSON.stringify([newTask, ...prevState.listTasks]))
+      localStorage.setItem('listTasks', JSON.stringify([newTask, ...prevState.listTasks]))
       // const tasks = JSON.parse(localStorage.getItem(this.state.txtInput))
       // console.log(tasks)
 
