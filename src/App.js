@@ -1,7 +1,7 @@
 // import Header from './components/header/Header';
 import FooterTodo from '../src/components/footer/Footer';
 import Task from './components/body/Task';
-import { listTasks } from './listTask/ListTask'
+// import { listTasks } from './listTask/ListTask'
 import Input from './components/input/Input'
 import ButtonPluss from './components/buttonpluss/ButtonPluss'
 import { defaultValueTasks } from './listTask/ListTask'
@@ -14,7 +14,7 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      listTasks: listTasks,
+      listTasks: JSON.parse(localStorage.getItem('listTask')) || [],
       txtInput: '',
     }
     this.handleChangeInput = this.handleChangeInput.bind(this);
@@ -42,10 +42,11 @@ export default class App extends Component {
     }
 
     this.setState(prevState => {
-      const jsonTask = JSON.stringify(newTask)
-      localStorage.setItem(this.state.txtInput, jsonTask)
-      const tasks = JSON.parse(localStorage.getItem(this.state.txtInput))
-      console.log(tasks)
+      // const jsonTask = JSON.stringify(newTask)
+      localStorage.setItem('listTask', JSON.stringify([newTask, ...prevState.listTasks]))
+      // const tasks = JSON.parse(localStorage.getItem(this.state.txtInput))
+      // console.log(tasks)
+
       return {
         ...prevState,
         listTasks: [newTask, ...prevState.listTasks],

@@ -1,14 +1,5 @@
 export const listTasks = [
-  {
-    id: 1,
-    taskName: 'Get up',
-    isCompleted: false
-  },
-  {
-    id: 2,
-    taskName: 'Code',
-    isCompleted: false
-  },
+
 ]
 
 export const defaultValueTasks = {

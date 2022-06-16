@@ -10,7 +10,7 @@ export default class Task extends Component {
   render() {
     const { listTasks, handleDeleteTask, handleCompleteTask } = this.props
     return (
-      <div>
+      <div className="task-container">
         {listTasks && listTasks.length > 0 && listTasks.map(item => (
           <TaskItem
             key={item.id}
